@@ -1,92 +1,68 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <url>
-    <loc>/home/about/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2017-01-01T00:00:00+02:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/home/publications_selected/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/publication/</loc>
+      <lastmod>2017-01-01T00:00:00+02:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/home/publications/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+02:00</lastmod>
+    </url>
+    
   
-  <url>
-    <loc>/home/talks/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2016-04-20T00:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/posts/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/projects/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
   
-  <url>
-    <loc>/home/teaching/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/home/tags/</loc>
-    <lastmod>2017-09-20T00:00:00+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/home/contact/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2017-01-01T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2017-01-01T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2017-01-01T00:00:00+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/home/</loc>
-    <lastmod>2016-04-20T00:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <priority>0</priority>
-  </url>
+    
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
   
 </urlset>
