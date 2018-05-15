@@ -11,6 +11,15 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Consistent Subtyping for All</title>
+      <link>/publication/consistent-subtyping-toplas/</link>
+      <pubDate>Tue, 15 May 2018 14:40:28 -0400</pubDate>
+      
+      <guid>/publication/consistent-subtyping-toplas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Let Arguments Go First</title>
       <link>/publication/let-arguments-go-first/</link>
       <pubDate>Tue, 17 Apr 2018 14:36:41 +0300</pubDate>

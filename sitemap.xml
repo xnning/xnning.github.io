@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>/publication/consistent-subtyping-toplas/</loc>
+      <lastmod>2018-05-15T14:40:28-04:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/let-arguments-go-first/</loc>
       <lastmod>2018-04-17T14:36:41+03:00</lastmod>
     </url>
@@ -61,6 +70,16 @@
     
       <loc>/publication_types/1/</loc>
       <lastmod>2018-04-17T14:36:41+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication_types/3/</loc>
+      <lastmod>2018-05-15T14:40:28-04:00</lastmod>
       <priority>0</priority>
     </url>
     

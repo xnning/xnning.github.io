@@ -17,10 +17,10 @@
       
     
   
-  <meta name="description" content="Unification and subtyping for dependent types are always complicated and even unpredictable. In this paper, we show how to do unification and subtyping for first-order dependent types based on a new strategy called type sanitization which helps resolve dependency between types. Our algorithm is remarkably simple and predictable.">
+  <meta name="description" content="Consistent subtyping is employed in some gradual type systems to validate type conversions. The original definition by Siek and Taha serves as a guideline for designing gradual type systems with subtyping. Polymorphic types à la System F also induce a subtyping relation that relates polymorphic types to their instantiations. However Siek and Taha’s definition is not adequate for polymorphic subtyping. The first goal of this paper is to propose a generalization of consistent subtyping that is adequate for polymorphic subtyping, and subsumes the original definition by Siek and Taha. The new definition of consistent subtyping provides novel insights with respect to previous polymorphic gradual type systems, which did not employ consistent subtyping. The second goal of this paper is to present a gradually typed calculus for implicit (higher-rank) polymorphism that uses our new notion of consistent subtyping. We develop both declarative and (bidirectional) algorithmic versions for the type system. The algorithmic version employs techniques developed by Dunfield and Krishnaswami to deal with instantiation. We prove that the new calculus satisfies all static aspects of the refined criteria for gradual typing. We also study an extension of the type system with static and gradual type parameters, in an attempt to support a variant of the dynamic criterion for gradual typing. Armed with a coherence conjecture for the extended calculus, we show that the dynamic gradual guarantee of our source language can be reduced to that of λB, which, at the time of writing, is still an open question. Most of the metatheory of this paper, except some manual proofs for the algorithmic type system and extensions, has been mechanically formalized using the Coq proof assistant.">
 
   
-  <link rel="alternate" hreflang="en-us" href="/publication/towards-unification-for-dependent-types/">
+  <link rel="alternate" hreflang="en-us" href="/publication/consistent-subtyping-toplas/">
 
   
 
@@ -69,24 +69,24 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/publication/towards-unification-for-dependent-types/">
+  <link rel="canonical" href="/publication/consistent-subtyping-toplas/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Ningning">
-  <meta property="og:url" content="/publication/towards-unification-for-dependent-types/">
-  <meta property="og:title" content="Towards Unification for Dependent Types | Ningning">
-  <meta property="og:description" content="Unification and subtyping for dependent types are always complicated and even unpredictable. In this paper, we show how to do unification and subtyping for first-order dependent types based on a new strategy called type sanitization which helps resolve dependency between types. Our algorithm is remarkably simple and predictable.">
+  <meta property="og:url" content="/publication/consistent-subtyping-toplas/">
+  <meta property="og:title" content="Consistent Subtyping for All | Ningning">
+  <meta property="og:description" content="Consistent subtyping is employed in some gradual type systems to validate type conversions. The original definition by Siek and Taha serves as a guideline for designing gradual type systems with subtyping. Polymorphic types à la System F also induce a subtyping relation that relates polymorphic types to their instantiations. However Siek and Taha’s definition is not adequate for polymorphic subtyping. The first goal of this paper is to propose a generalization of consistent subtyping that is adequate for polymorphic subtyping, and subsumes the original definition by Siek and Taha. The new definition of consistent subtyping provides novel insights with respect to previous polymorphic gradual type systems, which did not employ consistent subtyping. The second goal of this paper is to present a gradually typed calculus for implicit (higher-rank) polymorphism that uses our new notion of consistent subtyping. We develop both declarative and (bidirectional) algorithmic versions for the type system. The algorithmic version employs techniques developed by Dunfield and Krishnaswami to deal with instantiation. We prove that the new calculus satisfies all static aspects of the refined criteria for gradual typing. We also study an extension of the type system with static and gradual type parameters, in an attempt to support a variant of the dynamic criterion for gradual typing. Armed with a coherence conjecture for the extended calculus, we show that the dynamic gradual guarantee of our source language can be reduced to that of λB, which, at the time of writing, is still an open question. Most of the metatheory of this paper, except some manual proofs for the algorithmic type system and extensions, has been mechanically formalized using the Coq proof assistant.">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2017-06-17T14:56:23&#43;03:00">
+  <meta property="article:published_time" content="2018-05-15T14:40:28-04:00">
   
-  <meta property="article:modified_time" content="2017-06-17T14:56:23&#43;03:00">
-  
-
+  <meta property="article:modified_time" content="2018-05-15T14:40:28-04:00">
   
 
-  <title>Towards Unification for Dependent Types | Ningning</title>
+  
+
+  <title>Consistent Subtyping for All | Ningning</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -225,10 +225,10 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Towards Unification for Dependent Types</h1>
+    <h1 itemprop="name">Consistent Subtyping for All</h1>
     <span class="pub-authors" itemprop="author">
       
-      <strong>Ningning Xie</strong>, Bruno C. d. S. Oliveira
+      <strong>Ningning Xie</strong>, Xuan Bi, Bruno C. d. S. Oliveira, Tom Schrijvers
       
     </span>
     <span class="pull-right">
@@ -237,35 +237,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Towards%20Unification%20for%20Dependent%20Types&amp;url=%2fpublication%2ftowards-unification-for-dependent-types%2f"
+         href="https://twitter.com/intent/tweet?text=Consistent%20Subtyping%20for%20All&amp;url=%2fpublication%2fconsistent-subtyping-toplas%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=%2fpublication%2ftowards-unification-for-dependent-types%2f"
+         href="https://www.facebook.com/sharer.php?u=%2fpublication%2fconsistent-subtyping-toplas%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2ftowards-unification-for-dependent-types%2f&amp;title=Towards%20Unification%20for%20Dependent%20Types"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpublication%2fconsistent-subtyping-toplas%2f&amp;title=Consistent%20Subtyping%20for%20All"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpublication%2ftowards-unification-for-dependent-types%2f&amp;title=Towards%20Unification%20for%20Dependent%20Types"
+         href="http://service.weibo.com/share/share.php?url=%2fpublication%2fconsistent-subtyping-toplas%2f&amp;title=Consistent%20Subtyping%20for%20All"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Towards%20Unification%20for%20Dependent%20Types&amp;body=%2fpublication%2ftowards-unification-for-dependent-types%2f">
+         href="mailto:?subject=Consistent%20Subtyping%20for%20All&amp;body=%2fpublication%2fconsistent-subtyping-toplas%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -279,7 +279,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract" itemprop="text">Unification and subtyping for dependent types are always complicated and even unpredictable. In this paper, we show how to do unification and subtyping for first-order dependent types based on a new strategy called type sanitization which helps resolve dependency between types. Our algorithm is remarkably simple and predictable.</p>
+    <p class="pub-abstract" itemprop="text">Consistent subtyping is employed in some gradual type systems to validate type conversions. The original definition by Siek and Taha serves as a guideline for designing gradual type systems with subtyping. Polymorphic types à la System F also induce a subtyping relation that relates polymorphic types to their instantiations. However Siek and Taha’s definition is not adequate for polymorphic subtyping. The first goal of this paper is to propose a generalization of consistent subtyping that is adequate for polymorphic subtyping, and subsumes the original definition by Siek and Taha. The new definition of consistent subtyping provides novel insights with respect to previous polymorphic gradual type systems, which did not employ consistent subtyping. The second goal of this paper is to present a gradually typed calculus for implicit (higher-rank) polymorphism that uses our new notion of consistent subtyping. We develop both declarative and (bidirectional) algorithmic versions for the type system. The algorithmic version employs techniques developed by Dunfield and Krishnaswami to deal with instantiation. We prove that the new calculus satisfies all static aspects of the refined criteria for gradual typing. We also study an extension of the type system with static and gradual type parameters, in an attempt to support a variant of the dynamic criterion for gradual typing. Armed with a coherence conjecture for the extended calculus, we show that the dynamic gradual guarantee of our source language can be reduced to that of λB, which, at the time of writing, is still an open question. Most of the metatheory of this paper, except some manual proofs for the algorithmic type system and extensions, has been mechanically formalized using the Coq proof assistant.</p>
     
 
     
@@ -290,8 +290,8 @@
           <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
           <div class="col-xs-12 col-sm-9">
             
-            <a href="/publication/#7">
-              Workshop
+            <a href="/publication/#3">
+              Manuscript
             </a>
             
           </div>
@@ -308,7 +308,7 @@
       <div class="col-sm-10">
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-          <div class="col-xs-12 col-sm-9">In Draft Proceeding of 18th Symposium on Trends in Functional Programming</div>
+          <div class="col-xs-12 col-sm-9">Invited submission to <em>Transactions on Programming Languages and Systems</em></div>
         </div>
       </div>
       <div class="col-sm-1"></div>
@@ -322,7 +322,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
           <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-            June, 2017
+            May, 2018
           </div>
         </div>
       </div>
@@ -342,7 +342,7 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="/files/towards-unification-for-dependent-types.pdf" target="_blank" rel="noopener">
+<a class="btn btn-primary btn-outline" href="/files/consistent-subtyping-toplas.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -355,10 +355,6 @@
 
 
 
-
-<a class="btn btn-primary btn-outline" href="/files/slides-towards-unification-for-dependent-types.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
 
 
 
