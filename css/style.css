@@ -45,7 +45,7 @@ html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 10
 html, button, input, select, textarea {
 	font-family: "Open sans", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
 	font-weight: 400; /* normal */
-	color: #555; 
+	color: #333; 
 	font-smooth:always;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
