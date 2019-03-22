@@ -30,6 +30,12 @@ li {
     margin: 5px 0
 }
 
+.subsec{
+    margin-left : -20px;
+    margin-top, margin-bottom: 0px;
+    font-weight: bold;
+}
+
 
 /* -------------------------------------------------------------
 ======	RESET
