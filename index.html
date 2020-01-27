@@ -1,193 +1,264 @@
-
 <!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120783990-1"></script>
-    <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-
-     gtag('config', 'UA-120783990-1');
-    </script>
-
-    <meta charset="UTF-8">
-
-    <!-- Remove this line if you use the .htaccess -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-    <meta name="viewport" content="width=device-width">
+    <!-- TODO: test on IE edge?? -->
 
     <meta name="description" content="Ningning Xie">
     <meta name="author" content="Ningning Xie">
 
-    <title>Ningning Xie</title>
-
+    <title>Ningning Xie's Homepage</title>
     <link rel="shortcut icon" type="image/x-icon" href="image/icon.png">
     <link rel="shortcut icon" type="image/png" href="image/icon.png">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap core CSS -->
+    <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+    <!-- Bootstrap theme -->
+    <!--link href="css/bootstrap-theme.min.css" rel="stylesheet"-->
 
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	  <![endif]-->
-</head>
+    <!--link rel="stylesheet" href="./css/bootstrap.yeti.min.css" type="text/css"/-->
+    <!-- Custom styles for this template -->
+    <link href="./css/theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="mytheme.css" rel="stylesheet" type="text/css"> -->
 
-<body>
+    <style>
+        #personal-contact p {font-size: 18px;}
+        #tweak-jumbotron { margin-bottom: 0; padding-bottom: 10px; }
+        a { text-decoration: none; }
+        .col-md-4 { width:24%; }
+        .col-md-8 { width:73%; }
+        .col-md-9 { width:70%; }
+        body {
+          font-family:charter;
+          font-size: 17px;
+          line-height: 1.45;
+          color: black;
+          text-rendering: optimizeLegibility; }
+        .col-md-9 a { color:#3232FF; text-decoration:none; }
+        .callout {
+          border: 1px solid #DCFF19;
+          margin: 0.8em 0;
+          padding: 0.8em;
+          padding-bottom: 0.6em;
+          background-color: #FFFF00;
+          color: #333; }
 
-    <div class="container">
+        .accordion .card-header:after {
+            font-family: 'FontAwesome';
+            content: "\f068";
+            float: left;
+            margin-right: 5px;
+        }
+        .accordion .card-header.collapsed:after {
+            /* symbol for "collapsed" panels */
+            content: "\f067";
+            margin-right: 5px;
+        }
+        a {
+            color: #017785;
+        }
+        a:hover { color: #000; text-decoration: underline; background: rgba(0, 0, 0, .025);}
+    </style>
+  </head>
 
-        <div class="home-page main">
-	          <section class="grid-wrap" >
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://xnning.github.io">Home</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li><a href="https://xnning.github.io/#about">About</a></li>
+              <li><a href="https://xnning.github.io/#news">News</a></li>
+              <li><a href="https://xnning.github.io/#publications">Publications</a></li>
+              <li><a href="https://xnning.github.io/#service">Service</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+ 
+    <div class="container" role="main" id="home">
 
-		            <div class="figure grid col-one-third mq2-col-full">
-			              <center>
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- <div class="col-lg-12">      </div> -->
+        <div class="jumbotron" id="tweak-jumbotron">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <img src="./image/portrait.jpg" alt="portrait.">
+                    </div>
+                </div>
+                <div id="personal-contact" class="col-md-6">
+                    <!-- <br> -->
+                    <b><font size="+4">Ningning Xie</font></b>
+                    <p>
+                        <a href="https://www.cs.hku.hk/"><font>Computer Science</font></a>
+                        <br>
+                        <a href="https://www.hku.hk/">University of Hong Kong</a>
+                    </p>
+                    <p>
+                        Email: xnning <b>at</b> hku.hk <br>
+                    </p>
+                </div>
+            </div>
+        </div>
 
-			                  <p>
-			                      <img src="image/portrait.jpg" alt="" align="center"
-			                           hspace="-10" />
-			                  </p>
-
-
-			              </center>
-
-
-		            </div>
-
-		            <div class="grid col-two-thirds mq2-col-full">
-
-			              <h2 class="entry">Ningning Xie</h2>
-			              In Chinese: 谢宁宁
+        <div class="row">
+            <div class="col-md-6" id="about">
+                <h2>About</h2>
+                <p>
+                    I am a Ph.D. student in the <a href="https://hkuplg.github.io/">Programming Language Group</a> at <a href="">HKU</a>, advised by <a href="https://i.cs.hku.hk/~bruno/">Prof. Bruno Oliveira</a>.
+                <!-- <br> -->
+                    I obtained my B.S. (with Honors) from <a href="https://www.zju.edu.cn/english/">Zhejiang Unversity</a> in 2015.
                     <br>
-			               xnning at connect.hku.hk
-			              <p> Native Chinese, fluent English, communicable Japanese. </p>
+                    I had the pleasure to work with <a href="https://cs.brynmawr.edu/~rae/index.html">Richard A. Eisenberg</a> over Summer 2018, and
+                    <a href="https://people.cs.kuleuven.be/~tom.schrijvers/index.html"> Tom Schrijvers </a> over Spring 2018.
 
-		                <h2 class="entry">Education</h2>
-			               <ul>
-                         <li> Ph.D. Candidate, April 2017 - present
-                             <br>
-                             M.Phil. Candidate, September 2015 - March 2017
-                             <br>
-                            Programming Languge Group.
-                            Advisor: <a href="http://i.cs.hku.hk/~bruno/"> Prof. Bruno C. d. S. Oliveira. </a>
-                            <br>
-                                <i> The University of Hong Kong, Hong Kong. </i>
-                        </li>
-
-                        <li> B.S. Computer Science and Technology. GPA 3.97/4.0.
-                            <br>
-                            <i>Zhejiang University, China. July 2015</i>
-                        </li>
-			              </ul>
-
-                    <!-- <h6 class="subsec"> Extracurricular Experience</h6> -->
-                    <!-- <ul> -->
-                        <!-- <li> Intern, Google -->
-                        <!-- <br> -->
-                        <!-- <i>New York City, USA, August 2019 - November 2019 </i> -->
-                        <!-- </li> -->
-
-                        <!-- <li> Visiting Researcher, working with <a class="supervisor" href="https://cs.brynmawr.edu/~rae/index.html">Dr. Richard A. Eisenberg</a> -->
-                        <!-- <br> -->
-                        <!-- <i>Bryn Mawr College.</i> -->
-                        <!-- <i>Bryn Mawr, PA, USA, May 2018 - August 2018</i> -->
-                        <!-- </li> -->
-
-                        <!-- <li> Visiting Researcher, working with <a class="supervisor" href="https://people.cs.kuleuven.be/~tom.schrijvers/index.html"> Prof. -->
-                        <!-- Tom Schrijvers </a> -->
-                        <!-- <br> -->
-                        <!-- <i>KU Leuven.</i> -->
-                        <!-- <i>Leuven, Belgium, January 2018 - May 2018</i> -->
-                        <!-- </li> -->
-
-                        <!-- <li> <a class="summer-school" href="https://deepspec.org/event/dsss17/"> DeepSpec Summer School.</a> -->
-                        <!-- <br> -->
-                        <!-- <i>University of Pennsylvania.</i> -->
-                        <!-- <i>Philadelphia, PA, USA, July 2017.</i> -->
-                        <!-- </li> -->
-                        <!-- </ul> -->
+                </p>
+            </div>
+            <div class="col-md-6" id="news">
+                <h2>News</h2>
+                <ul>
+                    <li>
+                        <p>
+                            <b>2020 Jan 24</b> Presented <a href="./papers/kind-inference.pdf"> Kind Inference for Datatypes</a> on <a href="https://popl20.sigplan.org/">POPL 2020</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>2020 Jan 21</b> Started an internship at <a href="https://www.microsoft.com/en-us/research/">Microsoft Research Redmond</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>2019 Dec 31</b> Will serve on Artifact Evaluation Committee of <a href="https://pldi20.sigplan.org/">PLDI 2020</a>.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>2019 Dec 16</b> Our <a href="./papers/kind-inference.pdf"> Kind Inference for Datatypes</a> work won <b>POPL Distinguish Paper Award</b>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
 
 
+        <br>
 
-			              <h2 class="entry">Publications</h2>
+      <div class="row" id="publications">
+          <div class="col-md-12">
+            <h2> Publications </h2>
+            <hr>
 
-			              <ul>
-                        <li> Kind Inference for Datatypes.
-                            <a href="./papers/kind-inference.pdf">[pdf]</a>
-                            <a href="./papers/kind-inference-technical-supplement.pdf">[appendix]</a>
-                            <br>
-                            <b>Ningning Xie</b>, Richard A. Eisenberg, Bruno C. d. S. Oliveira
-                            <br>
-                            <i> 47th Symposium on Principles of Programming Languages (POPL 2020). January 2020</i>
-                            <br>
-                            <b style="color:green"> Distinguished Paper Award </b>
-                        </li>
+            <ul>
+                <!-- <h3> 2019 </h3> -->
 
-                        <li> Consistent Subtyping for All.
-                            <a href="./papers/consistent-subtyping-for-all-toplas.pdf">[pdf]</a>
-                            <br>
-                            <b>Ningning Xie</b>, Xuan Bi, Bruno C. d. S. Oliveira, Tom Schrijvers
-                            <br>
-                            <i>ACM Transactions on Programming Languages and Systems (TOPLAS). December 2019</i>
-                        </li>
+                <li>
+                    <p>
+                        <strong><i>Kind Inference for Datatypes.</i> </strong>
+                        <a href="./papers/kind-inference.pdf">[paper]</a>
+                        <a href="./papers/kind-inference-technical-supplement.pdf">[appendix]</a>
+                        <br>
+                        Ningning Xie, Richard A. Eisenberg, Bruno C. d. S. Oliveira<br>
 
-                        <li> Coherence of Type Class Resolution.
-                            <a href="./papers/coherence-class.pdf">[pdf]</a>
-                            <br>
-                            Gert-Jan Bottu, <b>Ningning Xie</b>, Koar Marntirosian, Tom Schrijvers
-                            <br>
-                            <i>24th International Conference on Functional Programming (ICFP 2019). August 2019</i>
-                        </li>
+                        <i> 47th Symposium on Principles of Programming Languages (POPL 2020) </i>
+                        <br>
+                        <b style="color:green"> Distinguished Paper Award </b>
+                    </p>
+                </li>
 
-                        <li> Distributive Disjoint Polymorphism for Compositional Programming.
-                            <a href="./papers/distributive-disjoint-polymorphism.pdf"> [pdf] </a>
-                            <a href="./slides/distributive-disjoint-intersection.pdf"> [slides] </a>
-                            <a href="./papers/distributive-poster.pdf"> [poster] </a>
-                            <br>
-                            Xuan Bi, <b>Ningning Xie</b>, Bruno C. d. S. Oliveira, Tom Schrijvers
-                            <br>
-                            <i>28th European Symposium on Programming (ESOP 2019). April 2019</i>
-                        </li>
 
-                        <li> Let Arguments Go First.
-                            <a href="./papers/let-arguments-go-first.pdf"> [pdf] </a>
-                            <a href="./slides/let-arguments-go-first.pdf"> [slides] </a>
-                            <br>
-                            <b>Ningning Xie</b>, Bruno C. d. S. Oliveira
-                            <br>
-                            <i>27th European Symposium on Programming (ESOP 2018). April 2018</i>
-                        </li>
+                <li>
+                    <p>
+                        <strong><i> Consistent Subtyping for All.</i></strong>
+                        <a href="./papers/consistent-subtyping-for-all-toplas.pdf">[paper]</a>
+                        <br>
+                        Ningning Xie, Xuan Bi, Bruno C. d. S. Oliveira, Tom Schrijvers
+                        <br>
+                        <i>ACM Transactions on Programming Languages and Systems (TOPLAS)</i>
+                       <br>
+                    </p>
+                </li>
 
-                        <li> Consistent Subtyping for All.
-                            <a href="./papers/consistent-subtyping-for-all.pdf">[pdf]</a>
-                            <br> <b>Ningning Xie</b>, Xuan Bi, Bruno C. d. S. Oliveira
-                            <br>
-                            <i>27th European Symposium on Programming (ESOP 2018). April 2018</i>
-                        </li>
+                <li>
+                    <p>
+                        <strong><i>Distributive Disjoint Polymorphism for Compositional Programming.</i> </strong>
+                        <a href="./papers/distributive-disjoint-polymorphism.pdf"> [paper] </a>
+                        <a href="./slides/distributive-disjoint-intersection.pdf"> [slides] </a>
+                        <a href="./papers/distributive-poster.pdf"> [poster] </a>
+                        <br>
+                        Xuan Bi, Ningning Xie, Bruno C. d. S. Oliveira, Tom Schrijvers
+                        <br>
+                        <i>28th European Symposium on Programming (ESOP 2019)</i>
+                    </p>
+                </li>
 
-                    </ul>
+                <li>
+                    <p>
+                        <strong><i>Coherence of Type Class Resolution.</i></strong>
+                        <a href="./papers/coherence-class.pdf">[paper]</a>
+                        <br>
+                        Gert-Jan Bottu, Ningning Xie, Koar Marntirosian, Tom Schrijvers
+                        <br>
+                        <i>24th International Conference on Functional Programming (ICFP 2019)</i>
+                    </p>
+                </li>
 
-                    <h2 class="entry">Service</h2>
-                    <p> <ul>
-                        <li> Program Committee Member.
+                <li>
+                    <p>
+                        <strong><i>Let Arguments Go First.</i></strong>
+                        <a href="./papers/let-arguments-go-first.pdf"> [paper] </a>
+                        <a href="./slides/let-arguments-go-first.pdf"> [slides] </a>
+                        <br>
+                        Ningning Xie, Bruno C. d. S. Oliveira
+                        <br>
+                        <i>27th European Symposium on Programming (ESOP 2018)</i>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <strong><i>Consistent Subtyping for All.</i></strong>
+                        <a href="./papers/consistent-subtyping-for-all.pdf">[paper]</a>
+                        <br>
+                        Ningning Xie, Xuan Bi, Bruno C. d. S. Oliveira
+                        <br>
+                        <i>27th European Symposium on Programming (ESOP 2018)</i>
+                    </p>
+                </li>
+
+            </ul>
+
+          </div>
+      </div>
+
+      <div class="row" id="service">
+            <div class="col-md-12">
+              <h2> Service </h2>
+              <hr>
+                        <ul>
+                            <li> <b>Program Committee.</b>
+                                <br>
                             <a href="https://icfp19.sigplan.org/committee/hiw-2019-papers-program-committee"> Haskell Implementors' Workshop 2019</a>.
-                        </li>
-                        <li> Program Committee Member.
+                            <br>
                             <a href="https://icfp19.sigplan.org/committee/haskellsymp-2019-papers-program-committee"> Haskell Symposium 2019</a>.
                         </li>
-                        <li> Committee Member in Artifact Evaluation Committee.
+                        <li> <b>Artifact Evaluation Committee.</b>
+                            <a href="https://pldi20.sigplan.org/committee/pldi-2020-PLDI-Research-Artifacts-artifact-evaluation-committee">PLDI 2020</a>.
                             <a href="https://icfp19.sigplan.org/committee/icfp-2019-research-artifacts-artifact-evaluation-committee">ICFP 2019</a>.
                         </li>
-                        <li> Sub-Reviewer.
+                        <li> <b>Sub-Reviewer.</b>
                             <a href="http://www.fos.kuis.kyoto-u.ac.jp/aplas2016/">APLAS 2016</a>.
                             <a href="https://www-aplas.github.io/">APLAS 2017</a>.
                             <a href="https://www.etaps.org/index.php/2017/esop">ESOP 2017</a>.
@@ -195,109 +266,28 @@
                             <a href="https://2019.ecoop.org/">ECOOP 2019</a>.
                             <a href="https://icfp19.sigplan.org/home">ICFP 2019</a>.
                         </li>
-                        <li> Student Volunteer.
+                        <li> <b>Student Volunteer.</b>
                             <a href="http://www.cs.hku.hk/apsys2016/"> APSys 2016</a>.
                             <a href="https://conf.researchr.org/home/pldi-2018"> PLDI 2018</a>.
                             <a href="https://conf.researchr.org/home/pldi-2018"> ICFP 2018</a>.
                             <a href="https://conf.researchr.org/home/etaps-2019"> ETAPS 2019</a>.
                         </li>
                     </ul> </p>
-
-
-                    <h2 class="entry">Talks</h2>
-                    <p> <ul>
-
-                        <li> Inferring Datatypes.
-                            <a href="./slides/inferring-datatypes.pdf"> [slides] </a>
-                            <br>
-                            Ningning Xie
-                            <br>
-                            <i>Lightning talk. 11th Haskell Implementors' Workshop (HIW 2019).
-                                Berlin, Germany. August 23, 2019.</i>
-                            <br>
-                        </li>
-
-                        <li> Dependent Types in Haskell.
-                            <a href="./slides/dependent-types-in-haskell.pdf"> [slides] </a>
-                            <a href="https://github.com/xnning/dependent-types-in-haskell"> [code] </a>
-                            <a href="https://medium.com/emurgohk/monthly-update-9-january-2nd-2018-94f18739c5ed"> [Emurgo HK] </a>
-                            <br>
-                            Ningning Xie
-                            <br>
-                            <i><a href="https://www.meetup.com/HK-Functional-programming/">Hong Kong Functional Programming Meetup</a>.
-                                Hong Kong. December 13, 2018.</i>
-                        </li>
-
-                        <li> Coercion Quantification.
-                            <a href="./papers/coercion-quantification.pdf">[extended abstract]</a>
-                            <a href="./slides/coercion-quantification.pdf"> [slides] </a>
-                            <br>
-                            Ningning Xie, Richard A. Eisenberg
-                            <br>
-                            <i>10th Haskell Implementors' Workshop (HIW 2018). St. Louis, Missouri, USA, September 23, 2018.</i>
-                        </li>
-
-                        <li> Consistent Subtyping for All.
-                            <a href="./slides/consistent-subtyping-for-all.pdf"> [slides] </a>
-                            <br>
-                            Ningning Xie
-                            <br>
-                            <i><a href="http://www.cis.upenn.edu/~plclub/"> Penn PLClub.</a>
-                                University of Pennsylvania, Philadelphia, PA, USA. May 11, 2018.</i>
-                        </li>
-
-                        <li> Towards Unification for Dependent Types.
-                            <a href="./papers/towards-unification-for-dependent-types.pdf">[extended abstract]</a>
-                            <a href="./slides/towards-unification-for-dependent-types.pdf"> [slides] </a>
-                            <br>
-                            Ningning Xie, Bruno C. d. S. Oliveira
-                            <br>
-                            <i> 18th Symposium on Trends in Functional Programming (TFP 2017). Canterbury, UK, June 19, 2017.</i>
-                        </li>
-
-                    </ul> </p>
-
-
-                    <h2 class="entry">Teaching</h2>
-                    <p> <ul>
-                        <li> Instructor. <a href="https://github.com/xnning/haskell-trainings">Haskell 101.</a>
-                            <i>Google. New York City. November 2019. </i>
-                        </li>
-                        <li> Teaching Assistant. <a href="http://www.cs.hku.hk/programme/course_info.jsp?infile=2018/comp3259.html">Principles of Programming Languages.</a>
-                            <i>The University of Hong Kong. Spring 2019. </i>
-                        </li>
-                        <li> Teaching Assistant. <a href="http://www.cs.hku.hk/programme/course_info.jsp?infile=2017/comp3258.html">Functional Programming. </a>
-                            <i>The University of Hong Kong. Fall 2017. </i>
-                        </li>
-                    </ul> </p>
-
-                    <h2 class="entry">Miscellany</h2>
-			              <ul>
-                        <li>
-                            <a href="./papers/ghc-core-review.pdf"> Literature Review of GHC Core.</a>
-                            In <i><a href="https://ghc.haskell.org/trac/ghc/wiki/Commentary"> The GHC Commentary</a>. June 2018.</i>
-
-                        </li>
-                        <li> Voluntary Translator.
-                            <a href="https://coq-zh.github.io/SF-zh/">Software Foundations, Chinese edition</a>.
-                        </li>
-                    </ul>
-
-
-		            </div>
-
-
-	          </section>
-
-	          <section class="grid-wrap">
-		            <div class="grid col-full mq2-col-full">
-
-
-
-		        </section>
-
-	              </div> <!--main-->
-
+            </div>
         </div>
-</body>
-</html>
+
+
+      <br><br><br><br>
+
+    </div> <!-- end of container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script async="" src="./css/analytics.js"></script><script src="./css/jquery.min.js"></script>
+    <script src="./css/bootstrap.min.js"></script>
+    <script src="./css/docs.min.js"></script>
+    <script src="./css/ganalytics.js"></script>
+
+
+
+</body></html>
