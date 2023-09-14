@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- TODO: test on IE edge?? -->
+
+    <meta name="description" content="Ningning's course CSC2125H">
+    <meta name="author" content="Ningning Xie">
+
+    <title>Ningning Xie CSC2125H </title>
+    <!-- Bootstrap core CSS -->
+    <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../style.css" rel="stylesheet"  type="text/css">
+    <link href="style.css" rel="stylesheet"  type="text/css">
+
+    <style>
+        #software-list p {font-size: 22px;}
+        #tweak-jumbotron-course {
+          text-align: center;
+        }
+        a { text-decoration: none; }
+        .col-md-4 { width:24%; }
+        .col-md-8 { width:73%; }
+        .col-md-9 { width:70%; }
+        body {
+            font-family:charter;
+            font-size: 17px;
+            line-height: 1.45;
+            color: black;
+            text-rendering: optimizeLegibility; }
+        .col-md-9 a { color:#3232FF; text-decoration:none; }
+    </style>
+
+  </head>
+
+  <body>
+
+    <div class="container" role="main" id="home">
+
+      <div id="tweak-jumbotron-course">
+          <div class = "row" style="padding-top:20pt">
+            <h2> CSC2125H Fall 2023 <br> Types and Programming Languages </h2>
+            <hr>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="container" role="main" id="home">
+      <div class = "row">
+        <a class="anchor" id = "course-info"></a>
+
+        <div class = "col-md-12">
+          <h2>Course Info </h2>
+          <strong>Instructor:</strong> <a href="https://xnning.github.io/">Ningning Xie</a>; email: ningningxie at cs.toronto.edu
+          <br>
+          <strong>Teaching Assistants:</strong> <a href="https://tsung-ju.org/">Tsung-Ju Chiang </a>; email: tsungju.chiang at mail.utoronto.ca
+
+          <br>
+          <strong>Lecture hours:</strong>  12-2 PM, Friday
+          <br>
+          <!-- <strong>Classroom:</strong> <a href="data/uoft-map-ww126.pdf">WW 126</a> -->
+          <!-- <br> -->
+          <strong>Office hours:</strong>
+          <ul>
+              <li> Instructor: 3-4 PM, Friday, BA 3256 </li>
+              <li> TA: 12-1pm, Tuesday, BA 3232</li>
+          </ul>
+          <strong>Contact Email:</strong> With subject "CSC2125H-F23: "</strong>
+        </div>
+      </div>
+
+      <hr>
+      <div class = "row" >
+        <a class="anchor" id = "course-overview"></a>
+        <div class = "col-md-12" >
+          <h2> Course Overview </h2>
+          <div style="margin-right:250">
+              We will study programming languages viewed through the lens of
+              their type structure. Half of the course will cover an
+              introduction to programming language principles, and the other
+              half will be reading group. After taking this course, students
+              will be able to define programming languages via their type system
+              and operational semantics, state and prove their properties, and
+              appreciate the deep philosophical and mathematical underpinnings
+              of programming language design.
+          </div>
+
+          <br>
+        <div style="margin-right:250;">
+
+          <b> Prerequisites: </b> <br>
+          The introductory part has no formal prerequisites, but an exposure of various forms of mathematical induction will be helpful.
+          <br>
+          Ideally, students should have already taken the following courses (or equivalent ones):
+              <ul>
+                  <li>CSC324 Principles of Programming Languages</li>
+                  <li>CSC2107/CSC488 Compilers and Interpreters</li>
+            </ul>
+          </div>
+
+          <div style="margin-right:250;">
+            <b>Grading & Evaluation:</b>
+            <ul>
+              <li>Active learning: 10%</li>
+              <li>Three small-ish assignments: 15%</li>
+              <li>Paper presentation: 20%</li>
+              <li>Project (proposal 15%, presentation 20%, report 20%)</li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <!-- <div class = "row" id = "grading">
+        <div class = "col-md-12">
+          <h2> Grading</h2>
+        </div>
+      </div> -->
+
+
+      <div class = "row" >
+        <a class="anchor" id = "course-resource"></a>
+        <div class = "col-md-12">
+          <h2> Relevant Textbooks  </h2>
+          All textbooks below are supplementary, since our main source of reading materials will be lectures and research papers.
+              <ul>
+                  <li> <a href="https://www.cis.upenn.edu/~bcpierce/tapl/">Types and Programming Languages</a> by Benjamin Pierce</li>
+                  <li> <a href="http://www.cs.cmu.edu/~rwh/pfpl.html">Practical Foundations for Programming Languages</a> by Robert Harper </li>
+                  <li> <a href="https://mitpress.mit.edu/9780262731034/the-formal-semantics-of-programming-languages/">The Formal Semantics of Programming Languages</a> by  Glynn Winskel</li>
+              </ul>
+        </div>
+      </div>
+
+      <hr>
+      <div class = "row" >
+        <a class="anchor" id = "course-schedule"></a>
+        <div class = "col-md-12">
+          <h2> Course Schedule </h2>
+          The schedule below is tentative and subject to change throughout the semester. <br>
+
+
+          <div class="course-schedule" >
+            <table>
+              <thead>
+                <tr>
+                  <th>Schedule</th>
+                  <th>Broad Area</th>
+                  <th>Notes</th>
+                  <th>Reading List</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                    <td><strong>Week 1  <br> </strong> Sept 14 </td>
+                  <td>
+                    Course Overview &
+                    The Lambda Calculus
+                  </td>
+                  <td>
+                      (slides will be uploaded after the lecture)
+                  </td>
+                </tr>
+
+                <tr>
+                    <td>  </td>
+                    <td colspan="3" align="center" > Homework 1 release </td>
+                </tr>
+
+                <tr>
+                  <td><strong>Week 2 </strong> <br> Sept 22</td>
+                  <td></td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td><strong>Week 3 </strong> <br> Sept 29 </td>
+                  <td></td>
+                  <td>
+                  </td>
+                  <td>
+                  </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td colspan="3" align="center" > Homework 2 release </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 4 </strong> <br> Oct 6 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 5 </strong> <br> Oct 13 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td colspan="3" align="center" > Homework 3 release </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td colspan="3" align="center" > Course project proposal due  </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 6 </strong> <br> Oct 20 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 7 </strong> <br> Oct 27 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 8 </strong> <br> Nov 3 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>  </td>
+                    <td colspan="4" align="center" > Reading week Nov 10 (No classes) </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 9 </strong> <br> Nov 17 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 10 </strong> <br> Nov 24 </td>
+                    <td></td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 11 </strong> <br> Dec 1 </td>
+                    <td>Project presentation I</td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Week 12 </strong> <br> Dec 8 </td>
+                    <td>Project presentation II</td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+
+
+
+              </tbody>
+
+
+            </table>
+        </div>
+
+        </div>
+      </div>
+
+
+            <!-- <a href="https://vowi.fsinf.at/images/1/1f/TU_Wien-Formale_Methoden_der_Informatik_VU_%28Egly%29_-_Decision_Procedures_An_Algorithmic_Point_of_View_-_Daniel_Kroening.pdf">Decision Procedure</a> -->
+            <!-- <a href="https://github.com/Armael/cdcl/blob/master/docs/A.%20Biere%2C%20A.%20Biere%2C%20M.%20Heule%2C%20H.%20Van%20Maaren%2C%20T.%20Walsh%20Handbook%20of%20Satisfiability%20%202009.pdf">Handbook of Satisfiability</a> -->
+            <!-- <a href="https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf">How to read a research paper?</a> -->
+            <!-- <a href="https://towardsdatascience.com/guide-to-reading-academic-research-papers-c69c21619de6">Guide to Reading Academic Research Papers</a> -->
+
+
+    </div>
+
+
+  </body>
+
+  </html>
