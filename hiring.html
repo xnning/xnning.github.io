@@ -33,167 +33,142 @@
     <!-- <link href="mytheme.css" rel="stylesheet" type="text/css"> -->
 
     <style>
-        #personal-contact p {font-size: 18px;}
-        #tweak-jumbotron { margin-bottom: 0; padding-bottom: 10px; }
-        a { text-decoration: none; }
-        .col-md-4 { width:30%; }
-        .col-md-8 { width:73%; }
-        .col-md-9 { width:70%; }
-        body {
-          font-family:charter;
-          font-size: 17px;
-          line-height: 1.45;
-          color: black;
-          text-rendering: optimizeLegibility; }
-        .col-md-9 a { color:#3232FF; text-decoration:none; }
-        .callout {
-          border: 1px solid #DCFF19;
-          margin: 0.8em 0;
-          padding: 0.8em;
-          padding-bottom: 0.6em;
-          background-color: #FFFF00;
-          color: #333; }
+     #personal-contact p {font-size: 18px;}
+     #tweak-jumbotron { margin-bottom: 0; padding-bottom: 10px; }
+     a { text-decoration: none; }
+     .col-md-4 { width:30%; }
+     .col-md-8 { width:73%; }
+     .col-md-9 { width:70%; }
+     body {
+         font-family:charter;
+         font-size: 17px;
+         line-height: 1.45;
+         color: black;
+         text-rendering: optimizeLegibility; }
+     .col-md-9 a { color:#3232FF; text-decoration:none; }
+     .callout {
+         border: 1px solid #DCFF19;
+         margin: 0.8em 0;
+         padding: 0.8em;
+         padding-bottom: 0.6em;
+         background-color: #FFFF00;
+         color: #333; }
 
-        .accordion .card-header:after {
-            font-family: 'FontAwesome';
-            content: "\f068";
-            float: left;
-            margin-right: 5px;
-        }
-        .accordion .card-header.collapsed:after {
-            /* symbol for "collapsed" panels */
-            content: "\f067";
-            margin-right: 5px;
-        }
-        a {
-            color: #017785;
-        }
-        a:hover { color: #000; text-decoration: underline; background: rgba(0, 0, 0, .025);}
-        paper {
-            /* color: #017785; */
-            /* font-weight: bold; */
-            /* font-style: italic; */
-        }
+     .accordion .card-header:after {
+         font-family: 'FontAwesome';
+         content: "\f068";
+         float: left;
+         margin-right: 5px;
+     }
+     .accordion .card-header.collapsed:after {
+         /* symbol for "collapsed" panels */
+         content: "\f067";
+         margin-right: 5px;
+     }
+     a {
+         color: #017785;
+     }
+     a:hover { color: #000; text-decoration: underline; background: rgba(0, 0, 0, .025);}
+     paper {
+         /* color: #017785; */
+         /* font-weight: bold; */
+         /* font-style: italic; */
+     }
 
-        author {
-            font-weight: bold;
-        }
+     author {
+         font-weight: bold;
+     }
 
     </style>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://xnning.github.io">Home</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <!-- <li><a href="https://xnning.github.io/#about">About</a></li>
-                     <li><a href="https://xnning.github.io/#news">News</a></li> -->
-              <li><a href="https://xnning.github.io/#publications">Publications</a></li>
-              <!-- <li><a href="https://xnning.github.io/#talks">Talks</a></li> -->
-              <li><a href="https://xnning.github.io/#service">Service</a></li>
-              <li><a href="https://xnning.github.io/#teaching">Teaching</a></li>
-              <!-- <li><a href="https://xnning.github.io/#misc">Misc</a></li> -->
-            </ul>
-          </div><!--/.nav-collapse -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./index.html">Home</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#talk">Talks</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="./teaching.html">Teaching</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
         </div>
     </nav>
 
     <div class="container" role="main" id="home">
 
 
-      <div class="row" id="prospective-students">
-          <div class="col-md-12">
-
-              <!-- <h2> Prospective Students </h2> -->
-
-              <ul>
-                  <!-- <li><h3>What research background should I have?</h3></li>
-                       <ul>
-                       <li> Programming languages research experience will be a plus but not a requisite.
-                       </li>
-                       <li> I also work on the intersection of programming languages and other fields (e.g., machine learning).
-                       </li>
-                       </li>
-                       </ul> -->
-
-                  <li><h3>Prospective PhD and Master students</h3></li>
-                  <ul>
-                      <li> Please apply to the <a href="https://web.cs.toronto.edu/graduate/prospective">UofT Department of Computer Science</a>.
-                          The application deadline is normally around December 1.</li>
-                      <li>
-                          Please feel free to send me an email with your resume.
-                          While I may not be able to always respond to emails, I read all of them.
-                          However, I do not make any admission decision before seeing your official application materials in the system.
-                      </li>
-                      <li> I review all applications that list me as one of your potential advisors; otherwise it's unlikely I will review your application.</li>
-                  </ul>
+        <div class="row" id="prospective-students">
+            <div class="col-md-12">
 
 
-                  <li><h3>Current UofT graduate students </h3></li>
-                  <ul>
-                      <li> I am interested in working with current graduate students on reserach projects.
-                          Please send an email to initiate the conversation. </li>
-                      <li>I teach CSC2125HF (Topics in Software Engineering: Types and Programming Languages). You are welcome to take or audit the course.</li>
-                  </ul>
+                    <h3>Prospective PhD and Master students</h3>
+                    <ul>
+                        <li> Please apply to the <a href="https://web.cs.toronto.edu/graduate/prospective">UofT Department of Computer Science</a>.
+                            The application deadline is typically around December 1st.</li>
+                        <li>
+                            Please explicitly <b>list me as one of your potential advisors</b> to ensure your application is reviewed by me.
+                            In your Statement of Purpose, please describe your specific research interests and what you would like to pursue under my supervision.
+                            <li>
+                                There is generally no need to email me,
+                                as I do not make admission decisions before reviewing the official application materials.
+                            </li>
+                            <li> Characteristics I Look for in Ph.D. Students:
+                                <ul>
+                                    <li> <b>Curiosity</b>: A succesful Ph.D. student has a genuine and deep desire to understand fundamental principles and explore the unknown in computer science, especially within programming languages. </li>
+                                    <li> <b>Independent thinking</b>:  It is crucial for students to think creatively, challenge assumptions, formulate original questions, and develop their own research approaches and perspectives.
+                                    </li>
+                                    <li> <b>Open to communication</b>: Effective communication is vital.  I value students who clearly articulate ideas, are receptive to feedback, and engage constructively in discussions.  </li>
+                                    <li> <b>Perseverance</b>:  Research inevitably involves challenges and setbacks.
+                                        I seek students who demonstrate resilience, are not easily discouraged, and possess the determination to complete complex projects. This involves a willingness to iterate, refine approaches, and maintain motivation over the long term to achieve meaningful research contributions.
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
 
-                  <li><h3>Current UofT undergraduate students</h3></li>
-                  <ul>
-                      <li>I am generally interested in mentoring a few undergraduate students every year. Please fill <a href="https://forms.gle/CvooAbUGZCVukZQD8">this form</a>. </li>
-                      <li>Ideally you should have taken, or are currently taking, CSC324. </li>
-                  </ul>
-
-                  <li><h3>Research interns and visitors to UofT</h3></li>
-                  <ul>
-                      <li>
-                          I am open to working with students outside UofT if there is a strong match.
-                          Please send an email to initiate the conservation or fill <a href="https://forms.gle/CvooAbUGZCVukZQD8">this form</a>.
-                      </li>
-                  </ul>
-
-                  <li><h3>Postdocs</h3></li>
-                  <ul>
-                      <li>
-                          Please send an email with your resume to initiate the conservation.
-                      </li>
-                  </ul>
-
-              </ul>
+                    <br>
 
 
-              <!-- <h3>About Toronto</h3>
-                   <ul>
-                   <li>Toronto is a metropolitan and diverse city, with endless exciting things to offer (restaurants, bars, shows, etc.), and low crime.</li>
-                   <li>Lots of big tech companies and opportunities: Google, Meta, Microsoft, Amazon, Apple, etc.</li>
-                   <li>Also great natures to explore: <a href="https://en.wikipedia.org/wiki/High_Park">High Park</a>, <a href="https://en.wikipedia.org/wiki/Cherry_Beach">Cherry Beach</a>, <a href="https://en.wikipedia.org/wiki/Scarborough_Bluffs">Scarborough Bluffs</a>, etc. </li>
-                   </ul>
+                    <h3>Current UofT undergraduate students</h3>
 
-                   <h3> About the University of Toronto</h3>
+                    I mentor a few undergraduate students each year through CSC494/495 and/or <a href="https://web.cs.toronto.edu/undergraduate/ugsrp"> Undergraduate Summer Research Program</a>.
+                    <ul>
+                        <li>You should have completed CSC324 with a grade of at least A. </li>
+                        <li>My graduate course, CSC2126 (Topics in Programming Languages), usually reserves a few spots for undergraduates.</li>
+                        <li>Here are some helpful materials to get you started:
+                            <ul>
+                                <li><i><a href="https://www.cis.upenn.edu/~bcpierce/tapl/"> Types and Programming Languages</a></i>
+                                    (available through
+                                    <a href="https://librarysearch.library.utoronto.ca/discovery/search?query=any,contains,types%20and%20programming%20languages&tab=Everything&search_scope=UTL_AND_CI&vid=01UTORONTO_INST:UTORONTO&offset=0"> the UofT library</a>)</li>
+                                <li><i><a href="https://softwarefoundations.cis.upenn.edu/">Software Foundations</a></i>
+                            </ul>
+                                </li>
+                    </ul>
 
-                   <ul>
-                   <li>We are the top-1 Computer Science department in Canada, #12 worldwide (<a href="https://www.topuniversities.com/university-rankings/university-subject-rankings/2022/computer-science-information-systems">QS Ranking</a>).</li>
-                   <li>We have a big department, with a number of amazing faculties in programming languages and many wonderful faculties in other areas. It's easy to collaborate across groups and directions.</li>
-                   <li>The Ph.D. application process is competitive.</li>
-                   </ul> -->
 
+
+
+
+            </div>
         </div>
-      </div>
-      <br><br><br><br>
+        <br><br><br><br>
 
     </div> <!-- end of container -->
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+         ================================================== -->
     <script async="" src="./css/analytics.js"></script><script src="./css/jquery.min.js"></script>
     <script src="./css/bootstrap.min.js"></script>
     <script src="./css/docs.min.js"></script>
