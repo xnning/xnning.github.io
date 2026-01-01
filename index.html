@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120783990-1"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'UA-120783990-1');
+    </script>
+    <!-- TODO: test on IE edge?? -->
+
+    <meta name="description" content="Ningning Xie">
+    <meta name="author" content="Ningning Xie">
+
+    <title>Ningning Xie</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/icon.png">
+    <link rel="shortcut icon" type="image/png" href="image/icon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <!--link href="css/bootstrap.min.css" rel="stylesheet"-->
+    <!-- Bootstrap theme -->
+    <!--link href="css/bootstrap-theme.min.css" rel="stylesheet"-->
+
+    <!--link rel="stylesheet" href="./css/bootstrap.yeti.min.css" type="text/css"/-->
+    <!-- Custom styles for this template -->
+    <link href="./css/theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <!-- <link href="mytheme.css" rel="stylesheet" type="text/css"> -->
+
+    <style>
+        #personal-contact p {font-size: 18px;}
+        #tweak-jumbotron { margin-bottom: 0; padding-bottom: 10px; }
+        a { text-decoration: none; }
+        .col-md-4 { width:30%; }
+        .col-md-8 { width:73%; }
+        .col-md-9 { width:70%; }
+        body {
+          font-family:charter;
+          font-size: 17px;
+          line-height: 1.45;
+          color: black;
+          text-rendering: optimizeLegibility; }
+        .col-md-9 a { color:#3232FF; text-decoration:none; }
+        .callout {
+          border: 1px solid #DCFF19;
+          margin: 0.8em 0;
+          padding: 0.8em;
+          padding-bottom: 0.6em;
+          background-color: #FFFF00;
+          color: #333; }
+
+        .accordion .card-header:after {
+            font-family: 'FontAwesome';
+            content: "\f068";
+            float: left;
+            margin-right: 5px;
+        }
+        .accordion .card-header.collapsed:after {
+            /* symbol for "collapsed" panels */
+            content: "\f067";
+            margin-right: 5px;
+        }
+        a {
+            color: #017785;
+        }
+        a:hover { color: #000; text-decoration: underline; background: rgba(0, 0, 0, .025);}
+        paper {
+            /* color: #017785; */
+            /* font-weight: bold; */
+            /* font-style: italic; */
+        }
+
+        author {
+            font-weight: bold;
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Home</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <!-- <li><a href="https://xnning.github.io/#about">About</a></li>
+                     <li><a href="https://xnning.github.io/#news">News</a></li> -->
+              <li><a href="#publications">Publications</a></li>
+              <li><a href="#talk">Talks</a></li>
+              <li><a href="#service">Service</a></li>
+              <li><a href="./teaching.html">Teaching</a></li>
+              <li><a href="./team.html">Team</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container" role="main" id="home">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <!-- <div class="col-lg-12">      </div> -->
+        <div class="jumbotron" id="tweak-jumbotron">
+            <div class="row" style="margin-bottom:15pt">
+                <div class="col-md-4">
+                    <img src="./image/portrait.jpeg" alt="portrait." width="250">
+                </div>
+                <div id="personal-contact" class="col-md-6" >
+                    <!-- <br> -->
+                    <b><font size="+4">Ningning Xie</font></b>
+                    <p>
+                        <font>Assistant Professor</font>
+                        <br>
+                        <a href="https://web.cs.toronto.edu/">Department of Computer Science</a>
+                        <br>
+                        <a href="https://www.utoronto.ca/">University of Toronto</a>
+                        <br>
+                        <font>Research Scientist</font>,
+                        <a href="https://www.deepmind.com/">Google DeepMind</a>
+                        <br>
+                        <font>Faculty Affiliate</font>,
+                        <a href="https://srinstitute.utoronto.ca/">Schwartz Reisman Institute</a>
+                    </p>
+                    <p>
+                        Office: BA 3256
+                        <br>
+                        Email: ningningxie <b>at</b> cs.toronto.edu<br>
+                        <!-- ningningxie <b>at</b> google.com<br> -->
+                    </p>
+                    <p>
+                        <a href="./CV.pdf">[CV]</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="about">
+                <h2>About</h2>
+                <p>
+                    I am
+                    an Assistant Professor
+                    in the
+                    <a href="https://web.cs.toronto.edu/">Department of Computer Science</a>
+                    at the
+                    <a href="https://www.utoronto.ca/">University of Toronto</a>.
+                    My research focuses on programming languages, in particular functional programming, type systems, logics, as well as their applications in broader domains.
+
+                    <br>
+
+                    Previously, I was a Research Scientist at <a href="https://www.deepmind.com/">Google DeepMind</a>,
+                    where I currently hold a part-time position.
+                    Before that, I was
+                    a Research Associate at the <a href="https://www.cst.cam.ac.uk/"> University of Cambridge</a>.
+
+                    I received my Ph.D. from the University of Hong Kong, and my B.S. from Zhejiang University.
+
+                    <br>
+                    <br>
+
+
+                    Prospective students: I always look for motivated students to join my group. Please take a look at <a href="./hiring.html">this link</a>.
+
+                </p>
+            </div>
+            <div class="col-md-6" id="about">
+                <h2>News</h2>
+                <ul>
+                    <li> One paper accepted at <a href="https://etaps.org/2026/conferences/esop/">ESOP'26</a>.</li>
+                    <li> Two papers accepted at <a href="https://popl26.sigplan.org/">POPL'26</a>.</li>
+                    <li> I gave an invited keynote at <a href="https://conf.researchr.org/home/icfp-splash-2025/hope-2025">HOPE'25</a>. </li>
+                    <li> I'm co-chairing <a href="https://popl26.sigplan.org/home/pepm-2026"> PEPM'26</a>.
+                        Please consider submitting a paper! </li>
+                    <li> We received a Distinguished Paper Award for our <a href="https://icfp25.sigplan.org/">ICFP'25</a> paper.</li>
+                    <li> I serve as the Publicity Chair for <a href="https://popl26.sigplan.org/">POPL'26 </a>. </li>
+                    </li>
+                    <li>
+                        I'm co-chairing <a href="https://conf.researchr.org/home/icfp-splash-2025/haskellsymp-2025">Haskell'25</a>, please consider submitting a paper and/or a talk proposal!
+                    </li>
+                    <li> One paper accepted at <a href="https://icfp25.sigplan.org/"> ICFP'25</a>.</li>
+                    <li>
+                        I'm co-organizing <a href="https://conf.researchr.org/home/icfp-splash-2025/PLMW-ICFP-SPLASH-2025"> PLMW@ICFP/SPLASH'25</a>.
+                    </li>
+                    <!-- <li> I gave a lecture on effect handlers at OPLSS'25. </li> -->
+                    <li> We received a Distinguished Paper Award at <a href="https://pldi25.sigplan.org/">PLDI'25</a>.</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+        <br>
+
+      <div class="row" id="publications">
+          <div class="col-md-12">
+
+            <h2> Publications </h2>
+
+            <ul>
+                <li>
+                    <p>
+                        <paper>Bidirectional Type Checking for Existential Types with
+                            Higher-Rank Polymorphism</paper>
+                        <br>
+                        Hasti Toossi, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://etaps.org/2026/conferences/esop/">ESOP 2026</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Extensible Data Types with Ad-Hoc Polymorphism</paper>
+                        <br>
+                        Matthew Toohey, Yanning Chen, Ara Jamalzadeh, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://popl26.sigplan.org/">POPL 2026</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3776662">[doi]</a>
+                        <a href="./papers/popl26extensible.pdf">[paper]</a>
+                        <a href="https://zenodo.org/records/18102889">[Lean proofs]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Handling Scope Checks: A Comparative Framework for Dynamic Scope Extrusion Checks</paper>
+                        <br>
+                        Michael Lee, <author>Ningning Xie</author>, Oleg Kiselyov, Jeremy Yallop
+                        <br>
+                        <a href="https://popl26.sigplan.org/">POPL 2026</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3776681">[doi]</a>
+                        <a href="./papers/popl26scope.pdf">[paper]</a>
+                        <a href="https://zenodo.org/records/17273738">[OCaml implementation]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Multi-stage Programming with Splice Variables</paper>
+                        <br>
+                        Tsung-Ju Chiang, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://icfp25.sigplan.org/">ICFP 2025</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3747518">[doi]</a>
+                        <a href="./papers/icfp25splice.pdf">[paper]</a>
+                        <a href="https://zenodo.org/records/15719807">[Agda proofs]</a>
+                        <br>
+                        <b style="color:green">ACM SIGPLAN Distinguished Paper Award</b>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Practical Type Inference with Levels</paper>
+                        <br>
+                        Andong Fan, Han Xu, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://pldi25.sigplan.org/">PLDI 2025</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3729338">[doi]</a>
+                        <a href="./papers/pldi25level.pdf">[paper]</a>
+                        <a href="./papers/pldi25level-appendix.pdf">[appendix]</a>
+                        <a href="https://zenodo.org/records/15334601">[Coq proofs and artifact]</a>
+                        <br>
+                        <b style="color:green">ACM SIGPLAN Distinguished Paper Award</b>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Handling the Selection Monad</paper>
+                        <br>
+                        Gordon Plotkin, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://pldi25.sigplan.org/">PLDI 2025</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3729321">[doi]</a>
+                        <a href="./papers/pldi25selection.pdf">[paper]</a>
+                        <a href="./papers/pldi25selection-appendix.pdf">[appendix]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Staged Compilation with Module Functors</paper>
+                        <br>
+                        Tsung-Ju Chiang, Jeremy Yallop, Leo White, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://icfp24.sigplan.org/">ICFP 2024</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3674649">[doi]</a>
+                        <a href="./papers/icfp24functor.pdf">[paper]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Parallel Algebraic Effect Handlers</paper>
+                        <br>
+                        <author>Ningning Xie</author>*, Daniel D. Johnson*, Dougal Maclaurin, Adam Paszke
+                        <br>
+                        <a href="https://icfp24.sigplan.org/">ICFP 2024</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3674651">[doi]</a>
+                        <a href="./papers/icfp24parallel.pdf">[paper]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>MacoCaml: Staging Composable and Compilable Macros</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Leo White, Olivier Nicole, Jeremy Yallop
+                        <br>
+                        <a href="https://icfp23.sigplan.org/">ICFP 2023</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3607851">[doi]</a>
+                        <a href="./papers/icfp23.pdf">[paper]</a>
+                        <a href="https://zenodo.org/records/8097872">[OCaml compiler]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Infix-extensible Record Types for Tabular Data</paper>
+                        <br>
+                        Adam Paszke, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://icfp23.sigplan.org/home/tyde-2023">TyDe 2023</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3609027.3609406">[doi]</a>
+                        <a href="./papers/tyde23.pdf">[paper]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>flap: A Deterministic Parser with Fused Lexing</paper>
+                        <br>
+                        Jeremy Yallop, <author>Ningning Xie</author>, Neel Krishnaswami
+                        <br>
+                        <a href="https://pldi23.sigplan.org/">PLDI 2023</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3591269">[doi]</a>
+                        <a href="./papers/pldi23flap.pdf">[paper]</a>
+                        <a href="https://arxiv.org/abs/2304.05276">[appendix]</a>
+                        <a href="https://github.com/yallop/ocaml-flap">[OCaml implementation]</a>
+                        <a href="https://doi.org/10.5281/zenodo.7712771">[artifact]</a>
+                        <br>
+                        <b style="color:green"> Publication of the Year,  <a href="https://www.cst.cam.ac.uk/ring/awards"> Cambridge Hall of Fame Awards</a> </b><a href="https://www.cst.cam.ac.uk/news/celebrating-our-hall-fame-awards">[news]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>First-class Names for Effect Handlers</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Youyou Cong, Kazuki Ikemori, Daan Leijen
+                        <br>
+                        <a href="https://2022.splashcon.org/track/splash-2022-oopsla">OOPSLA 2022</a>
+                        <a href="https://dl.acm.org/doi/10.1145/3563289">[doi]</a>
+                        <a href="./papers/oopsla22namedh.pdf">[paper]</a>
+                        <a href="./papers/oopsla22-tr.pdf">[technical report]</a>
+                        <a href="https://doi.org/10.5281/zenodo.7062932">[artifact]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Applicative Intersection Types</paper>
+                        <br>
+                        Xu Xue, Bruno C. d. S. Oliveira, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://conf.researchr.org/home/aplas-2022">APLAS 2022</a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-21037-2_8">[doi]</a>
+                        <a href="./papers/aplas2022applicative.pdf">[paper]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Union Types with Disjoint Switches</paper>
+                        <br>
+                        Baber Rehman, Xuejing Huang, <author>Ningning Xie</author>, Bruno C. d. S. Oliveira
+                        <br>
+                        <a href="https://2022.ecoop.org/">ECOOP 2022</a>
+                        <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2022.25">[doi]</a>
+                        <a href="./papers/ecoop22switches.pdf">[paper]</a>
+                    </p>
+                </li>
+
+
+
+                <li>
+                    <p>
+                        <paper>Synthesizing Optimal Parallelism Placement and Reduction Strategies on Hierarchical Systems for Deep Learning</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Tamara Norman, Dominik Grewe, Dimitrios Vytiniotis
+                        <br>
+                        <a href="https://mlsys.org/Conferences/2022/">MLSys 2022</a>
+                        <a href="https://proceedings.mlsys.org/paper_files/paper/2022/hash/f0f9e98bc2e2f0abc3e315eaa0d808fc-Abstract.html">[doi]</a>
+                            <a href="./papers/mlsys22.pdf">[paper]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Staging with Class: A Specification for Typed Template Haskell</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Matthew Pickering, Andres Löh, Nicolas Wu, Jeremy Yallop, Meng Wang
+                        <br>
+                        <a href="https://popl22.sigplan.org/">POPL 2022</a>
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3498723">[doi]</a>
+                        <a href="./papers/popl22staging.pdf">[paper]</a>
+                        <a href="./papers/popl22staging-full.pdf">[appendix]</a>
+                        <a href="./slides/popl22staging-slides.pdf">[slides]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Generalized Evidence Passing for Effect Handlers: Efficient Compilation of Effect Handlers to C</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Daan Leijen<br>
+                        <a href="https://icfp21.sigplan.org/">ICFP 2021</a>
+                        <a href="https://doi.org/10.1145/3473576">[doi]</a>
+                        <a href="./papers/multip.pdf">[paper]</a>
+                        <a href="./papers/multip-tr.pdf">[technical report]</a>
+                        <a href="./slides/multip.pdf"> [slides] </a>
+                        <a href="https://github.com/xnning/MpEff">[Haskell implementation]</a>
+                        <a href="https://hackage.haskell.org/package/mpeff">[mpeff on Hackage]</a>
+                        <a href="https://hub.docker.com/r/daanx/icfp21-multip-artifact">[artifact]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Perceus: Garbage Free Reference Counting with Reuse</paper>
+                        <br>
+                        <author>Ningning Xie</author>*, Alex Reinking*, Leonardo de Moura, Daan Leijen
+                         <br>
+                        <a href="https://pldi21.sigplan.org/">PLDI 2021</a>
+                        <a href="https://doi.org/10.1145/3453483.3454032">[doi]</a>
+                        <a href="./papers/perceus.pdf">[paper]</a>
+                        <a href="./papers/perceus-tr.pdf">[technical report]</a>
+                        <a href="./slides/perceus-slides.pdf"> [slides] </a>
+                        <a href="https://hub.docker.com/r/daanx/pldi-perceus">[artifact]</a>
+                        <br>
+                        <b style="color:green">ACM SIGPLAN Distinguished Paper Award</b>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Effect Handlers in Haskell, Evidently.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Daan Leijen<br>
+
+                        <a href="https://icfp20.sigplan.org/home/haskellsymp-2020">Haskell 2020</a>
+                        <a href="https://doi.org/10.1145/3406088.3409022">[doi]</a>
+                        <a href="./papers/haskell20evidently.pdf">[paper]</a>
+                        <a href="./slides/haskell-evidently.pdf"> [slides] </a>
+                        <a href="https://github.com/xnning/EvEff">[Haskell implementation]</a>
+                        <a href="https://hackage.haskell.org/package/eveff">[eveff on Hackage]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Effect Handlers, Evidently.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Jonathan Brachthäuser, Daniel Hillerström, Philipp Schuster, Daan Leijen<br>
+
+                        <a href="https://icfp20.sigplan.org/">ICFP 2020</a>
+                        <a href="https://doi.org/10.1145/3408981">[doi]</a>
+                        <a href="./papers/icfp20evidently.pdf">[paper]</a>
+                        <a href="./papers/icfp20evidently-appendix.pdf">[technical report]</a>
+                        <a href="./slides/effect-handlers-evidently.pdf"> [slides] </a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Kind Inference for Datatypes. </paper>
+                        <br>
+                        <author>Ningning Xie</author>, Richard A. Eisenberg, Bruno C. d. S. Oliveira<br>
+
+                        <a href="https://popl20.sigplan.org/">POPL 2020</a>
+                        <a href="https://doi.org/10.1145/3371121">[doi]</a>
+                        <a href="./papers/popl20kind-inference.pdf">[paper]</a>
+                        <a href="./slides/kind-inference.pdf">[slides]</a>
+                        <a href="./papers/kind-inference-technical-supplement.pdf">[appendix]</a>
+                        <br>
+                        <b style="color:green">ACM SIGPLAN Distinguished Paper Award</b>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Row and Bounded Polymorphism via Disjoint Polymorphism.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Bruno C. d. S. Oliveira, Xuan Bi, Tom Schrijvers<br>
+
+                        <a href="https://2020.ecoop.org/">ECOOP 2020</a>
+                        <a href="https://doi.org/10.4230/LIPIcs.ECOOP.2020.27">[doi]</a>
+                        <a href="./papers/ecoop20row.pdf">[paper]</a>
+                        <a href="./papers/ecoop20row-appendix.pdf">[appendix]</a>
+                        <a href="https://github.com/xnning/Row-and-Bounded-via-Disjoint">[Coq proof]</a>
+                        <a href="./papers/row-bounded-poster.pdf">[poster]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Consistent Subtyping for All.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Xuan Bi, Bruno C. d. S. Oliveira, Tom Schrijvers
+                        <br>
+                        <a href="https://dl.acm.org/journal/toplas">ACM Transactions on Programming Languages and Systems 2020</a>
+                        <br />
+                        <a href="https://doi.org/10.1145/3310339">[doi]</a>
+                        <a href="./papers/consistent-subtyping-for-all-toplas.pdf">[paper]</a>
+                        <a href="./slides/consistent-subtyping-for-all.pdf"> [slides] </a>
+                        <a href="https://github.com/xnning/Consistent-Subtyping-for-All">[Coq proof, Haskell implementation]</a>
+                    </p>
+                </li>
+
+
+
+                <li>
+                    <p>
+                        <paper>Coherence of Type Class Resolution.</paper>
+                        <br>
+                        Gert-Jan Bottu, <author>Ningning Xie</author>, Koar Marntirosian, Tom Schrijvers
+                        <br>
+                        <a href="https://icfp19.sigplan.org/">ICFP 2019</a>
+                        <a href="https://doi.org/10.1145/3341695">[doi]</a>
+                        <a href="./papers/coherence-class.pdf">[paper]</a>
+                        <a href="./papers/coherence-appendix.pdf">[appendix]</a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Distributive Disjoint Polymorphism for Compositional Programming. </paper>
+                        <br>
+                        Xuan Bi, <author>Ningning Xie</author>, Bruno C. d. S. Oliveira, Tom Schrijvers
+                        <br>
+                        <a href="https://conf.researchr.org/track/etaps-2019/esop-2019-papers">ESOP 2019</a>
+                        <a href="https://doi.org/10.1007/978-3-030-17184-1_14">[doi]</a>
+                        <a href="./papers/distributive-disjoint-polymorphism.pdf"> [paper] </a>
+                        <a href="./slides/distributive-disjoint-intersection.pdf"> [slides] </a>
+                        <a href="https://github.com/bixuanzju/ESOP2019-artifact"> [Coq proof, Haskell implementation] </a>
+                        <a href="./papers/distributive-poster.pdf"> [poster] </a>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Consistent Subtyping for All.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Xuan Bi, Bruno C. d. S. Oliveira
+                        <br>
+                        <a href="https://etaps.org/2018/esop">ESOP 2018</a>
+                        <a href="https://doi.org/10.1007/978-3-319-89884-1_1">[doi]</a>
+                        <a href="./papers/consistent-subtyping-for-all.pdf">[paper]</a>
+                        <a href="./slides/consistent-subtyping-for-all.pdf"> [slides] </a>
+                        <a href="https://github.com/xnning/Consistent-Subtyping-for-All">[Coq proof, Haskell implementation]</a>
+                        <br>
+                        <b style="color:green">Selected for Special Issue of ACM Transactions on Programming Languages and Systems</b>
+                        <br>
+                    </p>
+                </li>
+
+                <li>
+                    <p>
+                        <paper>Let Arguments Go First.</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Bruno C. d. S. Oliveira
+                        <br>
+                        <a href="https://etaps.org/2018/esop">ESOP 2018</a>
+                        <a href="https://doi.org/10.1007/978-3-319-89884-1_10">[doi]</a>
+                        <a href="./papers/let-arguments-go-first.pdf"> [paper] </a>
+                        <a href="./papers/let-arguments-go-first-full.pdf"> [appendix] </a>
+                        <a href="./slides/let-arguments-go-first.pdf"> [slides] </a>
+                        <a href="https://bitbucket.org/ningningxie/let-arguments-go-first/src/master/"> [Coq proof] </a>
+                    </p>
+                </li>
+            </ul>
+
+            <p > <b>Workshop talks</b> (without proceedings) </p>
+            <ul>
+                <li>
+                    <p>
+                    <paper> Type Inference Techniques: Implementation and Formalization, Better Together </paper>
+                    <br>
+                    <author>Ningning Xie</author>, Andong Fan
+                    <br>
+                    <a href="https://popl26.sigplan.org/home/wits-2026">WITS 2026</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Effect Handlers for Choice-based Learning</paper>
+                        <br>
+                        Gordon Plotkin, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://popl24.sigplan.org/home/lafi-2024">
+                            LAFI 2024
+                        </a>
+                        <a href="./papers/lafi24.pdf">[abstract]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Choice-Based Learning in JAX</paper>
+                        <br>
+                        Shangyin Tan*, Dan Zheng*, Gordon Plotkin, <author>Ningning Xie</author>
+                        <br>
+                        <a href="https://mlforsystems.org/">
+                            ML For Systems at NeurIPS 2023
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Safe and Efficient Generic Functions with MacoCaml</paper>
+                        <br>
+                        Dmitrij Szamozvancev, Leo White, <author>Ningning Xie</author>, Jeremy Yallop
+                        <br>
+                        <a href="https://icfp23.sigplan.org/home/ocaml-2023">
+                            OCaml 2023
+                        </a>
+                        <a href="./papers/ocaml23.pdf">[abstract]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>Parallel Algebraic Effect Handlers</paper>
+                        <br>
+                        <author>Ningning Xie</author>*, Daniel D. Johnson*, Dougal Maclaurin, Adam Paszke
+                        <br>
+                        <a href="https://popl22.sigplan.org/home/pepm-2022">
+                        PEPM 2022
+                        </a>
+                        <a href="./papers/pepm22.pdf">[pdf]</a>
+                        <a href="https://arxiv.org/pdf/2110.07493.pdf">[Arxiv]</a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <paper>First-class Names for Effect Handlers</paper>
+                        <br>
+                        <author>Ningning Xie</author>, Youyou Cong, Daan Leijen
+                        <br>
+                        <a href="https://icfp21.sigplan.org/home/hope-2021">
+                            HOPE 2021
+                        </a>
+                            <a href="./papers/hope21.pdf">[extended abstract]</a>
+                    </p>
+                </li>
+                <!-- <li>
+                     <p>
+                     <paper>Inferring Datatypes (lightning talk)</paper>
+                     <br>
+                     <author> Ningning Xie </author>
+                     <br>
+                     <a href="https://icfp19.sigplan.org/home/hiw-2019">Haskell Implementors' Workshop 2019</a>
+                     <a href="./slides/inferring-datatypes.pdf"> [slides] </a>
+
+                     </p>
+                     </li> -->
+                <li>
+                <p>
+                    <paper>Coercion Quantification.</paper>
+                    <br>
+                    <author>Ningning Xie</author>, Richard A. Eisenberg
+                    <br>
+                    <a href="https://icfp18.sigplan.org/track/hiw-2018-papers">
+                       HIW 2018</a>
+                    <a href="./papers/coercion-quantification.pdf">[extended abstract]</a>
+                    <a href="./slides/coercion-quantification.pdf"> [slides] </a>
+                    <a href="https://github.com/ghc/ghc/commit/ea5ade34788f29f5902c5475e94fbac13110eea5"> [GHC implementation] </a>
+                </p>
+                </li>
+                <li>
+                <p>
+                    <paper>Towards Unification for Dependent Types.</paper>
+                    <br>
+                    <author>Ningning Xie</author>, Bruno C. d. S. Oliveira
+                    <br>
+                    <a href="https://www.cs.kent.ac.uk/events/tfp17/">TFP 2017</a>
+                    <a href="./papers/towards-unification-for-dependent-types.pdf">[extended abstract]</a>
+                    <a href="./slides/towards-unification-for-dependent-types.pdf"> [slides] </a>
+                </p>
+                </li>
+            </ul>
+
+            <p style="font-weight:bold">Dissertation</p>
+            <ul>
+                <li>
+                    <p>
+                        <paper>Higher-rank Polymorphism: Type Inference and Extensions.</paper>
+                        <br>
+                        Ph.D. Dissertation. 2021. <a href="./papers/Thesis.pdf">[thesis]</a>
+                        <br>
+                    </p>
+                </li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="row" id="talk">
+            <div class="col-md-12">
+              <h2> Recent talks </h2>
+              <ul>
+                  <li>
+                      2025
+                      <ul>
+                          <li> Smart Handlers: Handling the Selection Monad (Invited keynote at <a href="https://conf.researchr.org/home/icfp-splash-2025/hope-2025">HOPE 2025</a>)  </li>
+                          <li> Smart Handlers: Handling the Selection Monad (IFIP WG2.1)  </li>
+                          <li> Algebraic Effects and Handlers  (Invited lectures at <a href="https://www.cs.uoregon.edu/research/summerschool/summer25/index.php">OPLSS 2025</a>)  </li>
+                      </ul>
+                  </li>
+                  <li>
+                      2024
+                      <ul>
+                          <li> Safe and Easy Compile-Time Generative Programming (<a href="https://eclaps.rak.ac/eclaps24/">ECLaPS 2024</a>) </li>
+                          <li> Safe and Easy Compile-Time Generative Programming (Invited plenary keynote at <a href="https://lopstr.github.io/2024/">LOPSTR/PPDP 2024</a>) </li>
+                          <li> Algebraic effect handlers and parallelizable computations (Invited keynote at <a href="https://zfoh.ch/zurihac2024/">ZuriHac 2024</a>) </li>
+                          <li> Algebraic effect handlers and parallelizable computations (Invited keynote at <a href="https://www.lambdadays.org/lambdadays2024">Lambda Days 2024</a>) </li>
+                      </ul>
+                  </li>
+                  <li>
+                      2023
+                      <ul>
+                          <li> Effect handlers for choice-based learning (NII Shonan meeting) </li>
+                          <li> Haskell for choice-based learning (Invited keynote at <a href="https://icfp23.sigplan.org/home/haskellsymp-2023">Haskell 2023</a>) </li>
+                          <li> Efficient Compilation of Algebraic Effect Handlers (Berkeley PL Seminar) </li>
+                      </ul>
+                  </li>
+                  <li>
+                      2022
+                      <ul>
+                          <li> MacoCaml: Staging Composable and Modular Macros (McGill PL Seminar) </li>
+                          <li> Staging with Class: A Specification of Typed Template Haskell (YOW! Lambda Jam 2022) </li>
+                          <li> Staging with Class: A Specification of Typed Template Haskell (EPFL PL Seminar) </li>
+                      </ul>
+                  </li>
+                  <li>
+                      2021
+                      <ul>
+                          <li> Efficient Compilation of Algebraic Effect Handlers (<a href="https://www.sri.inf.ethz.ch/workshop2021">Workshop on Dependable and Secure Software Systems</a>. ETH Zurich) </li>
+                          <li>Programming with Effect Handlers and FBIP in Koka (Tutorial at <a href="https://icfp21.sigplan.org/details/icfp-2021-tutorials/5/Programming-with-Effect-Handlers-and-FBIP-in-Koka">ICFP'21</a>) </li>
+                          <li> Perceus: Garbage Free Reference Counting with Reuse (LFCS Seminar. The University of Edinburgh) </li>
+                      </ul>
+                  </li>
+              </ul>
+            </div>
+        </div>
+
+
+      <div class="row" id="service">
+            <div class="col-md-12">
+              <h2> Service </h2>
+              <ul>
+                  <li>
+                      program (co-)chair
+                      <ul>
+                          <li> <a href="https://popl25.sigplan.org/series/pepm"> PEPM 2026 </a> </li>
+                          <li> <a href="https://conf.researchr.org/home/icfp-splash-2025/haskellsymp-2025">Haskell 2025</a>
+                          </li>
+                          <li>
+                              <a href="https://icfp21.sigplan.org/home/hiw-2021">HIW 2021</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                      program committee:
+                      <ul>
+                          <li> 2027:
+                              <a href="https://conf.researchr.org/series/POPL">POPL</a>.
+                          </li>
+                          <li> 2025:
+                              <a href="https://pldi25.sigplan.org/">PLDI</a>.
+                              <a href="https://icfp25.sigplan.org/">ICFP</a>.
+                              <a href="https://www.asplos-conference.org/asplos2025/"> ASPLOS</a>.
+                          </li>
+                          <li> 2024:
+                              <a href="https://tacas.info/"> TACAS</a>.
+                              <a href="https://popl24.sigplan.org/home/wits-2024"> WITS</a>.
+                              <a href="https://popl24.sigplan.org/track/POPL-2024-student-research-competition">POPL SRC</a>.
+                              <a href="https://icfp23.sigplan.org/series/ocaml">OCaml</a>.
+                          </li>
+                          <li> 2023:
+                              <a href="https://conf.researchr.org/home/POPL-2023">POPL</a>.
+                              <a href="https://pldi23.sigplan.org/">PLDI</a>.
+                              <a href="https://popl23.sigplan.org/home/PADL-2023">PADL</a>.
+                              <a href="https://trendsfp.github.io/">TFP</a>.
+                              <a href="https://icfp23.sigplan.org/home/tyde-2023">TyDe</a>.
+                          </li>
+                          <li> 2022:
+                              <a href="https://icfp22.sigplan.org/">ICFP</a>.
+                              <a href="https://trendsfp.github.io/index.html">TFP</a>.
+                              <a href="https://conf.researchr.org/home/flops-2022">FLOPS</a>.
+                              <a href="https://2022.ecoop.org/home/scala-ecoop-2022">Scala</a>.
+                              <a href="https://icfp22.sigplan.org/home/mlfamilyworkshop-2022">ML</a>.
+                              <a href="https://icfp21.sigplan.org/series/hope">HOPE</a>.
+                              <a href="https://2022.splashcon.org/track/splash-2022-SRC">SPLASH SRC</a>.
+                          </li>
+                          <li> 2021:
+                              <a href="https://popl21.sigplan.org/home/PADL-2021">PADL</a>.
+                          </li>
+                          <li> 2019:
+                              <a href="https://icfp19.sigplan.org/home/haskellsymp-2019">Haskell</a>.
+                              <a href="https://icfp19.sigplan.org/home/hiw-2019">HIW</a>.
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                       (co-)organizer:
+                      <ul>
+                          <li>
+                              <a href="https://conf.researchr.org/home/POPL-2026"> POPL 2026</a> (publicity chair)
+                          </li>
+                          <li>
+                              <a href=""> ICFP 2025 </a> (PLMW co-organizer)
+                          </li>
+                          <li>
+                              <a href=""> PLDI 2025 </a> (AEC co-chair)
+                          </li>
+                          <li>
+                              <a href="https://conf.researchr.org/home/POPL-2025"> POPL 2025</a> (publicity chair)
+                          </li>
+                          <li>
+                              <a href="https://icfp24.sigplan.org/"> ICFP 2024 </a> (PLMW co-organizer)
+                          </li>
+                          <li>
+                              <a href="https://pldi24.sigplan.org/track/pldi-2024-pldi-research-artifacts"> PLDI 2024 </a> (AEC co-chair)
+                          </li>
+                          <!-- <li>
+                               <a href="https://www.cs.cornell.edu/mfps-2022/">MFPS 2022</a> (session organizer)
+                               </li> -->
+                      </ul>
+                  </li>
+                  <li> steering committee
+                      <ul>
+                          <li>
+                              <a href="https://www.haskell.org/haskell-symposium/">Haskell</a> (2020-2023, 2025-2028)
+                          </li>
+
+                          <li>
+                              <a href="https://conf.researchr.org/series/PLMW">PLMW</a> (2025-2026)
+                          </li>
+                          <li>
+                               <a href="https://www.icfpconference.org/structure.html"> ICFP</a> (member at large, 2025-2029)
+                          </li>
+                      </ul>
+                  </li>
+                  <li>I am currently moderating the <a href="https://lists.seas.upenn.edu/mailman/listinfo/types-list">Types Forum</a>
+                      and the <a href="https://lists.seas.upenn.edu/mailman/listinfo/types-announce">Types-announce</a> mailing lists.
+                  </li>
+              </ul> </p>
+                    <!-- <p style="font-weight:bold">Mentoring</p>
+                         <ul>
+                         <li>
+                         Panelist. <a href="https://pldi22.sigplan.org/track/PLMW-PLDI-2022">PLMW @ PLDI 2022</a>.
+                         </li>
+                         <li>
+                         Long-term Mentor.
+                         <a href="https://www.sigplan.org/LongTermMentoring/">SIGPLAN-M</a>.
+                         </li>
+                         <li>
+                         Mentor.
+                         <a href="https://popl21.sigplan.org/home/PLMW-2021">PLMW @ POPL 2021</a>.
+                         </li>
+                         <li>
+                         Mentor.
+                         <a href="https://2020.splashcon.org/track/splash-2020-PLMW">PLMW @ SPLASH 2020</a>.
+                         </li>
+                         </ul> -->
+            </div>
+        </div>
+
+
+      <br><br><br><br>
+
+    </div> <!-- end of container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script async="" src="./css/analytics.js"></script><script src="./css/jquery.min.js"></script>
+    <script src="./css/bootstrap.min.js"></script>
+    <script src="./css/docs.min.js"></script>
+
+
+
+</body></html>
